@@ -1,7 +1,6 @@
 import '../models/Customer.dart';
 import '../models/OrderItem.dart';
 import '../models/OrderType.dart';
-import '../models/OrderType.dart';
 
 class Order {
   final Customer customer;

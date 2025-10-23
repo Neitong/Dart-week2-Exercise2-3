@@ -3,7 +3,6 @@ import 'package:app/models/Order.dart';
 import 'package:app/models/OrderItem.dart';
 import 'package:app/models/OrderType.dart';
 import 'package:app/models/Product.dart';
-import 'package:app/data/mock_data.dart';
 
 void main(List<String> arguments) {
   // --- 1. Create Products ---
