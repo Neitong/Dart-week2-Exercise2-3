@@ -4,17 +4,15 @@ import 'package:app/models/OrderItem.dart';
 import 'package:app/models/OrderType.dart';
 import 'package:app/models/Product.dart';
 
-void main(List<String> arguments) {
-  // --- 1. Create Products ---
+void main() {
   final p1 = Product(name: 'Laptop', price: 999.99);
   final p2 = Product(name: 'Mouse', price: 25.50);
   final p3 = Product(name: 'Keyboard', price: 74.99);
   final p4 = Product(name: 'Monitor', price: 199.00);
 
-  // --- 2. Create a Customer ---
   final customer1 = Customer(
-    name: 'Alice',
-    address: '123 Main St, Tech City',
+    name: 'Ronan',
+    address: 'Prek Leab, Phnom Penh',
   );
 
   // --- 3. Create a "Delivery" Order ---
@@ -28,7 +26,6 @@ void main(List<String> arguments) {
     ],
   );
 
-  // Test the API
   order1.printSummary();
 
   // --- 4. Create a "Pickup" Order ---
