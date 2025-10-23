@@ -1,4 +1,4 @@
-import '../lib/models/Duration.dart';
+import 'package:app/Duratioin.dart';
 void main() {
   print('--- 🧪 Duration Test Suite 🧪 ---\n');
 
