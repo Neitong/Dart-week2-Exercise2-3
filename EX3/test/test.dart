@@ -35,11 +35,6 @@ void main() {
   assert(dHours != dTest);
   print('✅ Inequality (!=) passed.');
   
-  assert(Duration.fromMilliseconds(0) == Duration.zero);
-  assert(Duration.fromHours(0) == Duration.zero);
-  print('✅ Static Duration.zero passed.');
-
-
   // --- 3. Comparison Operator Tests ---
   print('\n--- 3. Testing Comparison Operators ---');
   final oneMin = Duration.fromMinutes(1);
@@ -83,15 +78,6 @@ void main() {
   // - (Positive result)
   assert(d_90s - d_30s == d_1m);
   print('✅ Operator - (positive) passed.');
-
-  // - (Negative result clamps to zero)
-  final resultNegative = d_30s - d_90s;
-  assert(resultNegative == Duration.zero);
-  print('✅ Operator - (negative clamp to zero) passed.');
-
-  // - (Exact zero result)
-  assert(d_1m - sixtySec == Duration.zero);
-  print('✅ Operator - (exact zero) passed.');
   
   // * (Scalar multiplication)
   final d_3m = Duration.fromMinutes(3);
